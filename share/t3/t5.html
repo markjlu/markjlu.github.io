@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.c1{
+		width: 980px;
+		margin:0 auto;
+		-webkit-perspective: 600;
+	}
+	.c1_cnt{
+		width: 100px;
+		height: 100px;
+		position: relative;	
+		-webkit-transform-style:preserve-3d;
+		-webkit-animation:3s sport 5;
+	}
+	.t{
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background: pink;
+	}
+	.t1{
+		background: #3A42C9;
+		-webkit-transform:rotateY(90deg) translate3d(0,0,50px);
+	}
+	.t2{
+		background: #8B8EC9;
+		-webkit-transform:rotateY(-90deg) translate3d(0,0,50px);
+	}
+	@-webkit-keyframes sport{
+		to{
+			-webkit-transform:rotateY(360deg);
+		}
+	}
+</style>
+<body>
+	<div class="c1">
+		<div class="c1_cnt">
+			<div class="t1 t"></div>			
+			<div class="t2 t"></div>			
+		</div>
+	</div>
+</body>
+</html>

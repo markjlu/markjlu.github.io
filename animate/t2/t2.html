@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script src='../../jq.js'></script>
+	<script src='scrollable.js'></script>
+	<script src='scrollable.autoscroll.js'></script>
+	<script src='scrollable.cycle.js'></script>
+	<script src='scrollable.layershow.js'></script>
+	<link rel="stylesheet" href="../../a.css" />
+	<title>Document</title>
+	<style>
+		.t1{
+			width: 1500px;
+			height: 150px;
+			position: relative;
+			overflow: hidden;
+			margin: 25px auto;
+		}
+		.t1>ul{
+			width: 2000em;
+			position: absolute;
+			height: 100%;
+		}
+		.t1>ul>li{
+			width: 1500px;
+			height: 150px;
+			float: left;
+			position: relative;
+		}
+		.t1 ul .red{
+			background: #666666;
+		}
+		.t1 ul .yellow{
+			background: yellow;
+		}
+		.s1{
+			background: #25150F;
+		}
+		.s2{
+			background: #ff7c4c;
+		}
+		.s3{
+			background: #ffa180;
+		}
+		.s4{
+			background: #ffc7b2;
+		}
+		.t1>ul>li>*{
+			position: absolute;
+		}
+		.t1>ul>li>p{
+			font:20px microsoft yahei; 
+			top:60px;
+			color: #fff;
+		}
+		.p2{
+			right: 50px;
+		}
+		.n1 a , .n3 a{
+			font: 20px microsoft yahei;
+		}
+		.n3 a , .n4 a{
+			width: 50px;
+			height: 50px;
+			line-height: 30px;
+			display: inline-block;
+			background: #1129DD;
+			border-radius: 43px;
+			border: 1px solid #FFA180;
+		}
+		.n4 .ar{
+			background: #DD1163;
+		}
+		.ma{
+			margin:20px auto 26px auto;
+			width: 980px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="t1">
+		<ul>
+			<li class="s1 n1">
+				<a href="#" left=161 top=61 topp=-150 leftp=-200 time=1500>左</a>
+				<a href="#" right=751 top=61 topp=-150 rightp=-836 time=1500>中</a>
+				<p class="p1" left=1281 top=61 topp=-150 leftp=-200 time=1500>右</p>
+			</li>
+			<li class="s2 n2">
+				<div class="loader" left=100 top=10 topp=-150 leftp=-200 time=1500>
+				  <div class="spinner yellow"></div>
+				  <div class="spinner orange"></div>
+				  <div class="spinner red"></div>
+				  <div class="spinner pink"></div>
+				  <div class="spinner violet"></div>
+				  <div class="spinner mauve"></div>
+				  <div class="spinner light-yellow"></div>
+				</div>
+				<div class="loader" right=870 top=10 topp=-150 rightp=-836 time=1500>
+				  <div class="spinner yellow"></div>
+				  <div class="spinner orange"></div>
+				  <div class="spinner red"></div>
+				  <div class="spinner pink"></div>
+				  <div class="spinner violet"></div>
+				  <div class="spinner mauve"></div>
+				  <div class="spinner light-yellow"></div>
+				</div>
+				<div class="loader" left=315 top=10 topp=-150 leftp=-200 time=1500>
+				  <div class="spinner yellow"></div>
+				  <div class="spinner orange"></div>
+				  <div class="spinner red"></div>
+				  <div class="spinner pink"></div>
+				  <div class="spinner violet"></div>
+				  <div class="spinner mauve"></div>
+				  <div class="spinner light-yellow"></div>
+				</div>
+				<div class="loader" right=620 bottom=42 bottomp=-150 rightp=-200 time=1500>
+				  <div class="spinner yellow"></div>
+				  <div class="spinner orange"></div>
+				  <div class="spinner red"></div>
+				  <div class="spinner pink"></div>
+				  <div class="spinner violet"></div>
+				  <div class="spinner mauve"></div>
+				  <div class="spinner light-yellow"></div>
+				</div>
+				<div class="loader" left=1020 top=10 topp=-150 leftp=-200 time=1500>
+				  <div class="spinner yellow"></div>
+				  <div class="spinner orange"></div>
+				  <div class="spinner red"></div>
+				  <div class="spinner pink"></div>
+				  <div class="spinner violet"></div>
+				  <div class="spinner mauve"></div>
+				  <div class="spinner light-yellow"></div>
+				</div>
+				<div class="loader" left=1267 bottom=42 bottomp=-150 leftp=-200 time=1500>
+				  <div class="spinner yellow"></div>
+				  <div class="spinner orange"></div>
+				  <div class="spinner red"></div>
+				  <div class="spinner pink"></div>
+				  <div class="spinner violet"></div>
+				  <div class="spinner mauve"></div>
+				  <div class="spinner light-yellow"></div>
+				</div>
+			</li>
+				<li class="s3 n3">
+					<a href="#"  left=100 top=67 topp=-150 leftp=100 time=1500></a>
+					<a href="#"  left=200 top=67 topp=-150 leftp=200 time=2000></a>
+					<a href="#"  left=300 top=67 topp=-150 leftp=300 time=2500></a>
+					<a href="#"  left=400 top=67 topp=-150 leftp=400 time=3000></a>
+					<a href="#"  left=500 top=67 topp=-150 leftp=500 time=3500></a>
+					<a href="#"  left=600 top=67 topp=-150 leftp=600 time=3800></a>
+					<a href="#"  left=700 top=67 topp=-150 leftp=700 time=4100></a>
+					<a href="#"  left=800 top=67 topp=-150 leftp=800 time=4400></a>
+					<a href="#"  left=900 top=67 topp=-150 leftp=900 time=4700></a>
+					<a href="#"  left=1000 top=67 topp=-150 leftp=1000 time=5000></a>
+					<a href="#"  left=1100 top=67 topp=-150 leftp=1100 time=5300></a>
+					<a href="#"  left=1200 top=67 topp=-150 leftp=1200 time=5400></a>
+					<a href="#"  left=1300 top=67 topp=-150 leftp=1300 time=5500></a>
+					<a href="#"  left=1400 top=67 topp=-150 leftp=1400 time=5500></a>
+				</li>
+				<li class="s4 n4">
+					<a href="#"  left=100   top=67 topp=67 leftp=-300 time=600></a>
+					<a href="#"  left=200   top=67 topp=67 leftp=-300 time=1100></a>
+					<a href="#"  left=300   top=67 topp=67 leftp=-300 time=1600></a>
+					<a href="#"  left=400   top=67 topp=67 leftp=-300 time=1700></a>
+					<a href="#"  left=500   top=67 topp=67 leftp=-300 time=2000></a>
+					<a href="#"  left=600   top=67 topp=67 leftp=-300 time=2200></a>
+					<a href="#"  left=700   top=67 topp=67 leftp=-300 time=2400></a>
+					<a href="#"  right=110  top=67 topp=67 rightp=-300  time=600 class="ar"></a>
+					<a href="#"  right=210  top=67 topp=67 rightp=-300  time=1100 class="ar"></a>
+					<a href="#"  right=310 top=67 topp=67 rightp=-300 time=1600 class="ar"></a>
+					<a href="#"  right=410 top=67 topp=67 rightp=-300 time=1700 class="ar"></a>
+					<a href="#"  right=510 top=67 topp=67 rightp=-300 time=2200 class="ar"></a>
+					<a href="#"  right=610 top=67 topp=67 rightp=-300 time=1600 class="ar"></a>
+					<a href="#"  right=710 top=67 topp=67 rightp=-300 time=2400 class="ar"></a>
+				</li>
+<!-- 				<li class="s4 n5">
+					<a href="#" left=100 top=10 topp=-150 leftp=-200 time=1500>5</a><p class="p5" left=500>123</p>
+				</li>
+				<li class="s4 n6">
+					<a href="#" left=100 top=10 topp=-150 leftp=-200 time=1500>6</a><p class="p6" right=800 top=10 topp=-150 rightp=-836 time=1500>123</p>
+				</li>
+				<li class="s4 n7">
+					<a href="#" left=100 top=10 topp=-150 leftp=-200 time=1500>7</a><p class="p7" right=800 top=10 topp=-150 rightp=-836 time=1500>123</p>
+				</li> -->
+		</ul>
+<!-- 		<ul>
+			<li><a href="#" left=1></a><a href="#" left=1></a><a href="#" left=1></a><a href="#" left=1></a><a href="#" left=1></a></li>
+			<li><a href="#" left=2></a></li>
+		</ul> -->
+	</div>
+
+	<div class="ma">
+		<a href="###" class="common_btn" id="r">right</a>
+		<a href="###" class="common_btn" id="l">left</a>
+		<a href="###" class="common_btn" id="m">make</a>
+	</div>
+
+	<iframe src="t2_help.html" frameborder="0" width=1500 height=500></iframe>
+</body>
+<style>
+	.sm .t1{
+		width: 800px;
+	}
+	.sm .t1>ul>li{
+		width: 400px;
+	}
+	.t1{
+		font-family: microsoft yahei;
+	}
+</style>
+<script>
+	
+	$(".t1").scrollable({next:"#r",prev:"#l"}).cycle({
+		size:1,
+		allIn:true,
+		apiShow:0
+	}).layershow();
+
+	console.log(api2);
+	// console.log("aa");
+	// console.dir(api2);
+	// var n=1;
+	// api2.onBeforeSeek(function(i){
+	// 	if(n==3){api2.ajaxOver(i)}
+	// 	n++;
+	// 	console.log("xxx");
+	// 	console.log(api2.getIndex());
+	// })
+	// $("#m").bind("click",function(){
+	// 	// api2.ajaxOver()
+	// })
+	// $(window).resize(function(){
+	// 	console.log($(document).width());
+	// 	$(document).width()<=1500?$("body").addClass("sm"):$("body").removeClass("sm");
+	// 	api2.onResize();
+	// })
+</script>
+</html>
+
+<style>
+	@-webkit-keyframes spin {
+	  0% {
+	    -webkit-transform: rotate(0deg);
+	  }
+
+	  100% {
+	    -webkit-transform: rotate(-360deg);
+	  }
+	}
+	.loader {
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	-webkit-transform-origin: 63px 63px;
+	-webkit-animation: spin 1s 4 linear;
+	}
+	.loader .spinner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 0px 0px 26px 26px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0);
+	  background: none !important;
+	}
+	.loader .spinner.yellow {
+	  border-left-color: #ffff99;
+	}
+	.loader .spinner.orange {
+	  border-left-color: #ffcc66;
+	  -webkit-transform: rotate(-45deg);
+	}
+	.loader .spinner.red {
+	  border-left-color: #ff9966 !important;
+	  background: none;
+	  -webkit-transform: rotate(-90deg);
+	}
+	.loader .spinner.pink {
+	  border-left-color: #ff6699;
+	  -webkit-transform: rotate(-135deg);
+	}
+	.loader .spinner.violet {
+	  border-left-color: #cc66cc;
+	  -webkit-transform: rotate(-180deg);
+	}
+	.loader .spinner.mauve {
+	  border-left-color: #cc99cc;
+	  -webkit-transform: rotate(-225deg);
+	}
+	.loader .spinner.light-yellow {
+	  border-left-color: #fffad5;
+	  -webkit-transform: rotate(-270deg);
+	}
+</style>
+

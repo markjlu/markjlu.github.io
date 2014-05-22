@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script src='jq.js'></script>
+	<script src='scrollable.js'></script>
+	<script src='scrollable.autoscroll.js'></script>
+	<script src='scrollable.cycle.js'></script>
+	<link rel="stylesheet" href="a.css" />
+	<title>Document</title>
+	<style>
+	body{
+		padding-top: 50px;
+	}
+		.t1{
+			width: 1500px;
+			height: 80px;
+			position: relative;
+			overflow: hidden;
+			margin:0 auto;
+		}
+		.t1>ul{
+			width: 2000em;
+			position: absolute;
+			height: 100%;
+		}
+		.t1>ul>li{
+			width: 500px;
+			height: 50px;
+			float: left;
+		}
+		.t1 ul .red{
+			background: #666666;
+		}
+		.t1 ul .yellow{
+			background: yellow;
+		}
+		.s1{
+			background: #ff4200;
+		}
+		.s2{
+			background: #ff7c4c;
+		}
+		.s3{
+			background: #ffa180;
+		}
+		.s4{
+			background: #ffc7b2;
+		}
+		.s5{
+			background: #E6977A;
+		}
+		.s6{
+			background: #A37B6B;
+		}
+		.s7{
+			background: #EBCB87;
+		}
+		.s8{
+			background: #ffc7b2;
+		}
+		.t3{
+			height: 500px;
+			overflow: hidden;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="t1">
+		<ul>
+			<li class="s1 n1"><a href="#">1</a></li>
+			<li class="s2 n2"><a href="#">2</a></li>
+			<li class="s3 n3"><a href="#">3</a></li>
+			<li class="s4 n4"><a href="#">4</a></li>
+			<li class="s5 n5"><a href="#">5</a></li>
+			<li class="s6 n6"><a href="#">6</a></li>
+			<li class="s7 n7"><a href="#">7</a></li>
+		</ul>
+	</div>
+
+	<section class="t2">
+		<a href="###" class="common_btn" id="r">right</a>
+		<a href="###" class="common_btn" id="l">left</a>
+	</section>
+	<section class="t3">
+		<iframe src="t1_help.html" frameborder="0" width=1500 height=500></iframe>
+	</section>
+</body>
+<style>
+	.sm .t1{
+		width: 300px;
+	}
+	.sm .t1>ul>li{
+		width: 100px;
+	}
+</style>
+<script>
+	var api2=$(".t1").scrollable({
+		next:"#r",
+		prev:"#l"
+	}).cycle({size:3,api:1,allIn:true});
+</script>
+</html>

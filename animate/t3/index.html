@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<script src="jq.js"></script>
+	<style>
+		.c1{
+			width:1200px;
+			margin:0 auto;
+			position: relative;
+		}
+		.lun,.c2{
+			-webkit-animation: xuanzhuan 5s linear 1 3s ;
+			-moz-animation: xuanzhuan 5s linear 1 3s;
+		}
+		.c1 .t{
+			position: absolute;
+		}
+		@-webkit-keyframes xuanzhuan{
+			100%{
+				-webkit-transform: rotate(360deg);
+			}
+		}
+		@-moz-keyframes xuanzhuan{
+			100%{
+				-moz-transform: rotate(360deg);
+			}
+		}
+		.c1 .t{
+			-webkit-animation:lun 5s linear 1 3s ;
+			-moz-animation: lun 5s linear 1 3s;
+		}
+
+		@-webkit-keyframes  lun{
+			100%{
+				-webkit-transform: rotate(-360deg);
+			}
+		}
+		@-moz-keyframes  lun{
+			100%{
+				-moz-transform: rotate(-360deg);
+			}
+		}
+		.t1 {
+			top: 521px;
+			left: 231px;
+		}
+		.t2 {
+			top: 471px;
+			left: 61px;
+		}
+		.t3 {
+			top: 329px;
+			left: -47px;
+		}
+		.t4 {
+			top: 114px;
+			left: -5px;
+		}
+		.t5 {
+			top: -1px;
+			left: 128px;
+		}
+		.t6 {
+			top: -18px;
+			left: 299px;
+		}
+		.t7 {
+			top: 82px;
+			left: 447px;
+		}
+		.t8 {
+			top: 285px;
+			left: 517px;
+		}
+		.t9 {
+			top: 471px;
+			left: 408px;
+		}
+		.c2{
+			width: 551px;
+			height: 642px;
+			top: 0;
+			position: absolute;
+		}
+		.renrentouchu{
+			-webkit-animation:ren 3s linear 1 forwards;
+			-moz-animation:ren 3s linear 1 forwards;
+		}
+		@-webkit-keyframes ren{
+			0%{
+				-webkit-transform:scale(1)
+			}
+			70%{
+				-webkit-transform:translate(350px) scale(1);
+				opacity: 1
+			}
+			95%{
+				-webkit-transform:translate(610px,8px) ;
+				opacity: .5
+			}
+			100%{
+				-webkit-transform:translate(610px,20px) ;
+				opacity: .2
+			}
+		}
+		@-moz-keyframes ren{
+			0%{
+				-moz-transform:scale(1)
+			}
+			70%{
+				-moz-transform:translate(350px) scale(1);
+				opacity: 1
+			}
+			95%{
+				-moz-transform:translate(610px,8px) ;
+				opacity: .5
+			}
+			100%{
+				-moz-transform:translate(610px,20px) ;
+				opacity: .2
+			}
+		}
+		.renrentou{
+			margin-right: 30px;
+			background: url(ren.gif) no-repeat;
+			width: 29px;
+			height:73px;
+		}
+		.rr{
+			width: 29px;
+			height: 32px;
+			background: url(renrentou1.png) no-repeat;
+			position: absolute;
+			top: 49px;
+			left: 26px;
+		}
+		.rr1{
+			display: none;
+			background: url(renrentou1.png) no-repeat;
+		}
+		.rr2{
+			background: url(renrentou2.png) no-repeat;
+		}
+		.rr3{
+			background: url(renrentou3.png) no-repeat;
+		}
+		.rr4{
+			background: url(renrentou4.png) no-repeat;
+		}
+		.rr5{
+			background: url(renrentou5.png) no-repeat;
+		}
+		.rr6{
+			background: url(renrentou6.png) no-repeat;
+		}
+		.rr7{
+			background: url(renrentou7.png) no-repeat;
+		}
+		.rr8{
+			background: url(renrentou3.png) no-repeat;
+		}		}
+		.rr9{
+			background: url(renrentou5.png) no-repeat;
+		}
+		.lp{
+			position: absolute;
+			background: url(lunpan.png) no-repeat;
+			width: 55px;
+			height: 55px;
+			top: 38px;
+			left: 13px;
+		}
+		.lpshow{
+			-webkit-animation:lunpan 1s linear 1 2s forwards ;
+			-moz-animation:lunpan 1s linear 1 2s forwards ;
+		}
+		.lpshow2{
+			-webkit-animation:lunpanb 1s linear 1  forwards ;
+			-moz-animation:lunpanb 1s linear 1  forwards ;
+		}
+		@-webkit-keyframes lunpan{
+			60%{
+				-webkit-transform:rotate(180deg);
+			}
+			100%{
+				-webkit-transform:rotate(180deg);
+				opacity: 0;
+			}
+		}
+		@-webkit-keyframes lunpanb{
+			60%{
+				-webkit-transform:rotate(180deg);
+			}
+			100%{
+				-webkit-transform:rotate(180deg);
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes lunpan{
+			60%{
+				-webkit-transform:rotate(180deg);
+			}
+			100%{
+				-webkit-transform:rotate(180deg);
+				opacity: 0;
+			}
+		}
+		@-moz-keyframes lunpanb{
+			60%{
+				-webkit-transform:rotate(180deg);
+			}
+			100%{
+				-webkit-transform:rotate(180deg);
+				opacity: 1;
+			}
+		}
+		.out{
+			-webkit-animation:seeout 3s linear 1s 1  forwards;
+			-webkit-transform: scale(0.7);
+			-moz-animation:seeout 3s linear 1s 1  forwards;
+			-moz-transform: scale(0.7);
+			opacity: 0;
+		}
+		@-webkit-keyframes seeout{
+			20%{
+				opacity: 1;
+			}
+			100%{
+				-webkit-transform: translate(401px,31px)  scale(1.1);
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes seeout{
+			20%{
+				opacity: 1;
+			}
+			100%{
+				-moz-transform: translate(401px,31px)  scale(1.1);
+				opacity: 1;
+			}
+		}
+		.renrentouend{
+			display: block;
+			position: absolute;
+			top: 49px;
+			left: 27px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			var flag = true;
+			$(".renrentou").on("webkitAnimationEnd animationend ",function(event){
+				if(event.target.id == "ren"){
+					$(".t1 img:nth-child(1)").attr("src","2_1.png");
+				}
+			})
+			$(".lp").on("webkitAnimationEnd animationend ",function(){
+			})
+			$("#c2").on("webkitAnimationEnd animationend ",function(event){
+				if(event.target.id == "lp"){
+					if(flag){
+						$(".rr1").show();
+						flag = !flag;
+					}
+					$("#ren").hide();
+					$("#lp").removeClass("lpshow").addClass("lpshow2")
+					$(".lp").hide();
+					$(".t1 img:nth-child(1)").attr("src","2.png");
+				}
+				if(event.target.id == "ren"){
+					$(".rr1").show();
+					$("#ren").hide();
+				}
+				if(event.target.id == "c2"){
+					$(".t1 img:nth-child(1)").attr("src","2_0.png");
+					$(".lp").add("#ren2").show();
+					$("#ren2").addClass("out");
+					$(".rr1").hide();
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="c1">
+		<img src="1.png" alt="" class="lun"/>
+		<div class="c2" id="c2">
+			<div class="t t1">
+				<img src="2_0.png" alt="" />
+				<div class="rr rr1" id="r1"></div>
+				<img src="lunpan.png" alt="" class="lp lpshow" id="lp"/>
+				<div class="renrentou renrentouend" id="ren2" style="display: none;"></div>
+			</div>
+			<div class="t t2">
+				<img src="2.png" alt="" />
+				<div class="rr rr2"></div>
+			</div>
+			<div class="t t3">
+				<img src="2.png" alt="" />
+				<div class="rr rr3"></div>
+			</div>
+			<div class="t t4">
+				<img src="2.png" alt="" />
+				<div class="rr rr4"></div>
+			</div>
+			<div class="t t5">
+				<img src="2.png" alt="" />
+				<div class="rr rr5"></div>
+			</div>
+			<div class="t t6">
+				<img src="2.png" alt="" />
+				<div class="rr rr6"></div>
+			</div>
+			<div class="t t7">
+				<img src="2.png" alt="" />
+				<div class="rr rr7"></div>
+			</div>
+			<div class="t t8">
+				<img src="2.png" alt="" />
+				<div class="rr rr8"></div>
+			</div>
+			<div class="t t9">
+				<img src="2.png" alt="" />
+				<div class="rr rr9"></div>
+			</div>
+		</div>
+	</div>
+	<div class="lu">
+		<div class="ren">
+			<div class="renrentou renrentouchu" id="ren"></div>
+		</div>
+	</div>
+</body>
+</html>

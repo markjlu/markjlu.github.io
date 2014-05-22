@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="t2.css" />
+	<title></title>
+</head>
+<body>
+	<div id="outer">
+		<div class="prop "  me=40 style="position: absolute;z-index: 20;top: 399px;left:1px;"><div class="roadtile" style="width: 2000em;"></div></div>
+		<img me=600 src="mario.png" class="prop m1" style="visibility: visible; position: absolute; z-index: 50; left: 961px; top:-100px;">
+		<img me=600 src="http://www.nintendo.com.au/gamesites/mariokartwii/images/scene_home/blueshell.png" class="prop" style="visibility: visible; position: absolute; z-index: 60; left: 1916px; top: 274px;">
+		<img me=100 class="prop " src="http://www.nintendo.com.au/gamesites/mariokartwii/images/scene_home/mushroom2.png" class="" style="visibility: visible; position: absolute; z-index: 20; left: 527.7999999999787px; top: 256px;">
+		<!-- <img me=100 src="http://www.nintendo.com.au/gamesites/mariokartwii/images/scene_comp/itembox.png" class="prop "  style="visibility: visible; position: absolute; z-index: 20; left: 1493px; top: 232px;"> -->
+		<img me=600 src="http://www.nintendo.com.au/gamesites/mariokartwii/images/scene_comp/luigi.png" class="prop" style="visibility: visible; position: absolute; z-index: 40; left: 3000px; top: 36px;">
+		<div me=600 class="prop mu" style="position:absolute;left:3500px;"><p class="multi-ani">New Egg</p></div>
+		<iframe me=600  class="prop"  style="position:absolute;left: 3460px;top: 191px;z-index: 999;" src="t2_help.html" width=960 height=500 frameborder="0"></iframe>
+	</div>
+</body>
+<script src="jq.js"></script>
+ <script src="jquery.mousewheel.js"></script>
+</html>
+
+
+<script>
+
+	$("#outer").bind("mousewheel",function(event){
+		var flag;
+		event.deltaY > 0 ? flag = -1 : flag = 1;
+		console.log(event);
+		$(".prop").each(function(i,e){
+			if(parseInt($(".mu").css("left")) < 828 && flag == 1){
+				return false;
+			}
+			if(parseInt($(".m1").css("left")) > 561  && flag == -1 ){
+				return false;
+			}
+			var l = parseInt($(e).css("left")),
+			m = parseInt($(e).attr("me"));
+			l = l - (flag * m);
+			// $(e).animate({
+			// 	left : l 
+			// },1000)
+			$(e).css("left",l)
+			console.log($(e).css("left"))
+		})
+	})
+</script>

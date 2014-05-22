@@ -1,0 +1,253 @@
+
+<html><meta charset="gb2312"><style>html { 
+    font-size: 100%; 
+    overflow-y: scroll; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+body{
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border-color: #999999;
+    border-width: 2px;
+    line-height: 1.5;
+    margin: 2em 3em;
+    text-align:left;
+    padding: 0 100px 0 100px;
+}
+
+pre{
+    background-color: #eee;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+code{
+    background-color: #eee;
+    padding: 1px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; 
+}
+pre code {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+li p{
+    margin: 0.3em;
+}
+ul > li{
+    list-style-type: disc;
+}
+a:link, a:visited{
+    color: #33e;
+    text-decoration: none;
+}
+a:hover{
+    color: #00f;
+    text-shadow:1px 1px 2px #ccf;
+    text-decoration:underline;
+}
+h1{
+    color: #999;
+    font-weight: 400;
+    font-size: 36px;
+}
+h2{
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 30px;
+}
+h3{
+    color: #666;
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+.shadow{
+    -webkit-box-shadow:0 5px 15px #000;
+    -moz-box-shadow:0 5px 15px #000;
+    box-shadow:0 5px 15px #000;     
+}
+</style><body><h1>响应式布局</h1>
+<hr />
+<blockquote>
+<ul>
+<li>介绍：</li>
+</ul>
+<blockquote>
+<p>响应式布局就是定制好网站的几个尺寸对应的样式，通过判断屏幕的分辨率，套用不同的样式 </p>
+</blockquote>
+<ul>
+<li>他的优点是：</li>
+</ul>
+<blockquote>
+<p>布局方便 ----- 只需要根据主流的宽屏，窄屏，ipad ，iphone 设计出不同的展示效果，通过样式进行切换</p>
+</blockquote>
+</blockquote>
+<h1>自适应布局</h1>
+<hr />
+<blockquote>
+<ul>
+<li>介绍：</li>
+</ul>
+<blockquote>
+<p>自适应布局是根据屏幕的分辨率调整网站的布局，也就是说 <strong>任何一个分辨率下，他都可以展示出不同的布局。</strong> </p>
+</blockquote>
+<ul>
+<li>他的优点是：</li>
+</ul>
+<blockquote>
+<p>适应所有的分辨率，在所有的分辨率下都可以完美的显示</p>
+</blockquote>
+</blockquote>
+<h1>响应式布局和自适应布局的结合使用</h1>
+<hr />
+<blockquote>
+<blockquote>
+<p>目前PC端主流浏览器的分辨率较为统一，可以考虑 <strong>1024 x 768</strong> 和 <strong>1280 x 200</strong> 这2种情况下的显示
+所以用可以使用响应式布局</p>
+<p>手机端用户 <strong>640 x 960</strong> 以下的尺寸会有很多种，所以这个分辨率下的布局采用自适应较好</p>
+</blockquote>
+</blockquote>
+<h1>流布局</h1>
+<hr />
+<blockquote>
+<p>流布局优点：</p>
+<blockquote>
+<ul>
+<li>
+<p>根据用户窗口大小的不同做出改变</p>
+</li>
+<li>
+<p>在一定宽度范围内提供稳定的视觉体验</p>
+</li>
+<li>
+<p>不需单独架构移动端网站</p>
+</li>
+</ul>
+</blockquote>
+<p>流布局缺点：</p>
+<blockquote>
+<ul>
+<li>
+<p>加载多余的样式，html结构，图片，页面消耗较多流量，虽然也可以响应式的加载部分资源，但总的支持不是很好</p>
+</li>
+<li>
+<p>响应式设计的基本原则是保证每个屏幕下的用户看到的内容大致相同，所以不是很适合内容复杂的网站，比如新蛋的首页做成响应式设计的话，可能首页会拉的很长</p>
+</li>
+<li>
+<p>设计师需要设计出不同屏幕下的设计稿，增加设计难度。比如同一个功能区块可能在不同屏幕尺寸下显示的宽高不一样，要保证设计内容能在不同的尺寸情况下都有较好的视觉效果</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>流布局适用于布局较为简单，或者图片较多，以展示内容为主的页面</strong></p>
+</blockquote>
+
+<iframe src="zsy_demo.html" frameborder="0" width=1442 height=360 id="f2"></iframe>
+<blockquote>
+    <input type="range" name="points" min="300" max="1442" id="range" value=1200/>
+    <div><span id="px"></span> 像素</div>
+</blockquote>
+</body></html>
+<style>
+    #range{
+        width:1200px;
+        margin-left: 37px;
+    }
+
+    ::-webkit-slider-runnable-track {
+        border: 1px solid #a0b3d6;
+        background: #10286C;
+    }
+    ::-webkit-slider-thumb {
+        outline: 1px solid #a0b3d6;
+        background-color: red;
+    }
+    ::-webkit-slider-runnable-track:hover {
+        background-color: #295DD7;
+    }
+
+
+    ::-moz-range-track {
+        border: 1px solid #a0b3d6;
+        height: 20px;
+        background: #f0f3f9;
+    }
+    ::-moz-range-thumb {
+        background: #34538b;
+        height: 30px;
+    }
+
+    ::-ms-fill-lower { background: orange; }
+    ::-ms-fill-upper { background: green; }
+    ::-ms-thumb { background: red; }
+    ::-ms-ticks-before { display: block; color: black; }
+    ::-ms-ticks-after { display: block; color: blue; }
+    ::-ms-track { padding: 5px; }
+    ::-ms-tooltip { display: none; /* 数值提示 只能是display或visibility */ }
+
+
+</style>
+<script src="../../jq.js"></script>
+<script>
+    
+    function a(val){
+        $("#f2").css("width",val)
+    }
+
+    var init = (function(){
+        function _getValue(){
+            return $("#range").val();
+        }
+        function _bindMove(){
+            $("#range").on("mousemove",_bfn1)
+        }
+        function _bfn1(){
+            var val = _getValue()
+            console.log(val);
+            stInit.setVal(val);
+            stInit.showVal(val);
+        }
+        function _removeMove(){
+            $("#range").off("mousemove",_bfn1) 
+        }
+        var stInit = {
+            bd : function(){
+                $("#range").on("mousedown click",function(){
+                    _bindMove();
+                }).on("mouseup",function(){
+                    _removeMove();
+                }) 
+            },
+            setVal : function(val){
+                a(parseInt(val))
+                // alert(parent.document.getElementById("f2"))
+                // console.log(("#f2"));
+            },
+            showVal : function(val){
+                $("#px").text(val)
+            },
+            setRangeVal : function(n){
+                $("#range").val(n);
+                $("#px").text(n)
+            }
+        };
+        return{
+            init:function(n){
+                stInit.bd();
+                stInit.setRangeVal(n);
+            }
+        }
+    })()
+    var val = init.init(1400)
+</script>
