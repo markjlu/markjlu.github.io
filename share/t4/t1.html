@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.t{
+			width: 100%;
+		}
+		.t_cnt{
+		}
+		@-webkit-keyframes sport{
+			from{
+				opacity: 0.8;
+			}
+			to{
+				opacity:1;
+			}
+		}
+		.t_cnt  .col1{
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ff562f), color-stop(100%, #ff9444));
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t_cnt  .col2{
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffc556), color-stop(100%, #ff9b2f));
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t_cnt  .col3{
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #935f67), color-stop(100%, #bc4235));
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t_cnt  .col4{
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #723362), color-stop(100%, #9d223c));
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t_cnt  .col5{
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #4a2e6d), color-stop(100%, #242540));
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t_cnt  .col6{
+			background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #53327c), color-stop(100%, #322d61));
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t_cnt  .col7{
+			background: #42438f;
+			/*-webkit-animation:sport 2s linear forwards; */
+		}
+		.t1_l a{
+			display: block;
+			position: relative;
+		}
+		.t1_l{
+			float: left;
+			width: 720px;
+		}
+		.t1_l a img{
+			position: fixed;
+		}
+		.t1_r{
+			float: left;
+		}
+		.wrap{
+			width:1100px;
+			margin:0 auto;
+		}
+		.t_cnt{
+			width: 100%;
+		}
+		.t1_r p{
+			font:47px Microsoft Yi Baiti;
+			color: #fff;
+		}
+		.t1_line1{
+			width: 1px;
+			background: #fff;
+			position: fixed;
+			left: 50%;
+		}
+		.t1_line2{
+			width: 1px;
+			background: #fff;
+			position: fixed;
+			left: 50%;
+		}
+		.t1_clock{
+			width: 140px;
+			height: 140px;
+			border:1px solid #fff;
+			position: fixed;
+			left: 50%;
+			top:50%;
+			margin-top:-75px;
+			margin-left:-69px;
+			border-radius: 50%;
+
+		}
+		.t1_clock p{
+			font:24px Microsoft Yi Baiti;
+			text-align: center;
+			color: #fff;
+		}
+		.t1_clock .time{
+			font-size: 48px;
+			margin-top: 35px;
+		}
+		.fix_wrap{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top:0;
+				left: 0;
+				z-index: 111;
+				opacity: 1;
+				-webkit-transition: opacity .8s ease-out;
+			}
+			.wrap {
+				z-index: 9999;
+				position: relative;
+			}
+			.show{
+				opacity: 0;
+			}
+			#tu{
+				margin-left: 180px;
+			}
+
+</style>
+</head>
+<body>
+	<div class="t_cnt ">
+		<div class="wrap ">
+			<div class="t1_l">
+				<a href="#"><img src="opo1.png" alt="" id="gtu"/><img src="tu1a.png" alt="" id="tu" class="tshow_1"/></a>
+			</div>
+			<div class="t1_line1"></div>
+			<div class="t1_line2"></div>
+			<div class="t1_clock"><p class="time">5:30</p><p class="am">AM</p></div>
+			<div class="t1_r">
+				<div class="t1_r_c1">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+				<div class="t1_r_c2">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+				<div class="t1_r_c3">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+				<div class="t1_r_c4">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+				<div class="t1_r_c5">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+				<div class="t1_r_c6">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+				<div class="t1_r_c7">
+					<p>
+						Smart Off turns your <br/>
+						lights off when you <br/>
+						leave home.<br/>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="other_show">
+			
+		</div>
+		<div class="fix_wrap col1"></div>
+	</div>
+</body>
+<script src="jq.js"></script>
+<script>
+ 	var t = (function(){
+		var h = $(window).height(),
+		index = 1,
+		timer = null,
+		flag = null,
+ 		init = {
+ 			initHeight:function(){
+				$(".t1_r").children().add($(".t_cnt ,.t1_l ,.t1_line")).css("height",h);
+				$(".t1_line1,.t1_line2").css("height",(h/2)-75);
+				$(".wrap,.t_cnt").css("height",h*7);
+ 				$(".t1_line2").css("top",(h/2)-75+140);
+ 				$(".t1_clock").css("top",h/2);
+ 				$("#tu").css("top",(h-$("#tu").height())/2)
+ 			},
+ 			initMargin:function(){
+ 				$(".t1_r_c1 p").each(function(){
+ 					var height = $(this).height();
+ 					$(this).css("paddingTop",(h-height)/2+"px")
+ 				})
+ 				$("#gtu").each(function(){
+ 					$(this).css("paddingTop",(h-530)/2+"px")
+ 				})
+ 			},
+ 			bindEvent:function(n){
+				var bgEl = document.createElement('div');
+                bgEl.className += 'fix_wrap show col' + n;
+                $(".fix_wrap").addClass("remove");
+                $(".fix_wrap").animate({
+                	opacity:0
+                },1000)
+                $(".t_cnt ").append(bgEl);
+                $(".fix_wrap").not(".remove").animate({
+                	opacity:1
+                },1000)
+				$("#tu").attr("src","tu"+n+".png")
+					var a = $("#tu")[0].className.replace(/tshow_.*/g,'') + " tshow_" + n + " ";
+				$("#tu").attr("class",a).css("top",(h-$("#tu").height())/2);
+ 			},
+ 			initEvent:function(){
+ 				$(window).bind("scroll",function(){
+ 					var scTop = $(window).scrollTop(),
+ 					n = Math.round((scTop+h) / h);
+ 					flag = true;
+					clearTimeout(timer);
+					timer = setTimeout(function(){
+						$(".remove").remove();
+					}, 3000);
+ 					if(index != n){
+ 						index = n ;
+	 					switch(n){
+	 						case 1 :
+		 						$(".time").text("5:30");
+		 						$(".am").text("AM");
+		 						break;
+	 						case 2 :
+		 						$(".time").text("6:30");
+		 						$(".am").text("AbM");
+		 						break;
+	 						case 3 :
+		 						$(".time").text("7:11");
+		 						$(".am").text("AM");
+		 						break;
+	 						case 4 :
+		 						$(".time").text("6:25");
+		 						$(".am").text("PM");
+		 						break;
+	 						case 5 :
+		 						$(".time").text("7:33");
+		 						$(".am").text("PM");
+		 						break;
+	 						case 6 :
+		 						$(".time").text("11:53");
+		 						$(".am").text("PM");
+		 						break;
+	 						case 7 :
+		 						$(".time").text("AWAY");
+		 						break;
+	 					}
+	 					t.bindEvent(n);
+ 					}
+ 				})
+ 			},
+ 			init:function(){
+ 				this.initHeight();
+ 				this.initMargin();
+ 				this.initEvent();
+ 			}
+ 		}
+ 		return init;
+ 	})();
+ 	console.dir(t.init());
+</script>
+</html>

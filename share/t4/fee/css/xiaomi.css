@@ -1,0 +1,583 @@
+﻿body {
+    margin:0 auto;
+    font-family:Microsoft Yi Baiti;
+    color:#766A5D;
+    min-width:1200px;
+    max-width:1440px;
+}
+
+a {
+    text-decoration: none;
+    color:#766A5D;
+}
+
+ul {
+    margin:0;
+}
+
+
+li {
+    list-style-type:none;
+}
+
+img {
+    border:none;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.rl {
+    float: right;
+    display: inline;
+}
+
+.mgr40 {
+    margin-right:40px;
+}
+
+
+.head {
+    width:100%;
+    overflow:hidden;
+    display: block;
+}
+
+.intro {
+    width:100%;
+    overflow:hidden;
+    display: block;
+}
+
+.intro .bg {
+    width:100%;
+    min-width:1200px;
+    min-height:570px;
+    position:absolute;
+    z-index:-1;
+    left:0px;
+    top:0px;
+    background:
+}
+
+.contract {
+    position:relative;
+    font-size:22px;
+    margin:20px;
+    width:100%;
+    text-align:right;
+}
+
+.xiaomi_pname {
+    height:150px;
+    width:400px;
+    position:relative;
+    font-size:72px;
+    margin-left:200px;
+    margin-top:100px;
+}
+
+.product_pic {
+    height: 500px;
+    width: 500px;
+    margin-top:20px;
+    position: relative;
+    background:url("../resources/product_pic.png") no-repeat 0 0;
+}
+
+.preorder_button {
+    height:80px;
+    width:280px;
+    text-align:center;
+    position:relative;
+    margin-left:200px;
+    background:#F8A03F;
+    border-bottom:5px solid #EC9635;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.preorder_button a {
+    font-size:32px;
+    font-weight:bolder;
+    color:#FFF;
+    line-height:80px;
+    vertical-align:middle;
+    display: inline-block;
+    width:280px;
+    height: 80px;
+}
+
+.play_button {
+    height:180px;
+    width:180px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:200px;
+    background:url("../resources/play_button_03.png") no-repeat;
+}
+
+.brandlogo {
+    margin-left:100px;
+}
+
+.brandlogo li {
+    width:190px;
+    height:100px;
+    text-align:center;
+    overflow:hidden;
+    float:left;
+}
+
+.banner {
+    width:100%;
+}
+
+.banner ul{
+    padding-left:0;
+    height:auto;
+    min-width:1200px;
+    max-width:1440px;
+    overflow:hidden;
+}
+
+.banner ul img{
+    padding-left:0;
+    width:100%;
+    min-width:1200px;
+    max-width:1440px;
+    overflow:hidden;
+    float:left;
+}
+
+.product {
+    width:100%;
+    height:550px;
+    min-width:1200px;
+    max-width:1440px;
+    padding:80px 0px;       /*  这边padding JS更改 */
+    position: relative;
+}
+
+.productarea {
+    width:550px;
+    height:550px;
+    margin-left:30px;
+    position: relative;
+}
+
+.productpic {
+    width:550px;
+    height:550px;
+    position: relative; 
+    background:url("../resources/product.png") repeat 0 0;
+}
+
+.productcenter {
+    display: block;
+    overflow: hidden;
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:150px;
+    left:200px;
+}
+
+.line {
+    width:2px;
+    height:250px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-80px;
+    background:url("../resources/line_02.png") repeat 0 0;
+}
+
+.mgt10 {
+    margin-top:10px;
+}
+
+.time {
+    width:200px;
+    height:200px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.text {
+    display: block;
+    overflow: hidden;
+    width:500px;
+    height:200px;
+    position: absolute;
+    top:280px;
+    right:20px; 
+}
+
+
+#status1 {
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FF562F,endColorStr=#FF9444); /*IE 6 7 8*/
+    background: -ms-linear-gradient(top left,#FF562F,#FF9444); 			/*  ms  IE8 9 10*/
+    background:-moz-linear-gradient(top left,#FF562F,#FF9444);  		/*  moz firefox */
+    background:-webkit-linear-gradient(top left,#FF562F,#FF9444);		/*  wekit chrome */
+    background: -o-linear-gradient(top left,#FF562F,#FF9444);   		/*  o opera */
+}
+
+    #status1 .productcenter {
+         background:url("../resources/PRODUCTCENTER_01.png") no-repeat 0 0;
+    }
+
+    #status1 .time {
+        background:url("../resources/time_01.png") no-repeat 0 0;
+    }
+
+    #status1 .text {
+        background: url("../resources/text_01.png") no-repeat 0 0;
+    }
+
+#status2 {
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FFC556,endColorStr=#FF9B2F);  
+    background: -ms-linear-gradient(top left,#FFC556,#FF9B2F);        
+    background:-moz-linear-gradient(top left,#FFC556,#FF9B2F);  
+    background:-webkit-linear-gradient(top left,#FFC556,#FF9B2F);
+    background: -o-linear-gradient(top left,#FFC556,#FF9B2F); 
+}
+
+    #status2 .productcenter {
+         background:url("../resources/PRODUCTCENTER_02.png") no-repeat 0 0;
+    }
+
+    #status2 .time {
+         background:url("../resources/time_02.png") no-repeat 0 0;
+    }
+
+    #status2 .text {
+        background: url("../resources/text_02.png") no-repeat 0 0;
+    }
+
+#status3 {
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#935F68,endColorStr=#BC4235); /*IE 6 7 8*/   
+    background: -ms-linear-gradient(top left,#935F68,#BC4235);        
+    background:-moz-linear-gradient(top left,#935F68,#BC4235);  
+    background:-webkit-linear-gradient(top left,#935F68,#BC4235);
+    background: -o-linear-gradient(top left,#935F68,#BC4235);  
+}
+
+    #status3 .productcenter {
+         background:url("../resources/PRODUCTCENTER_03.png") no-repeat 0 0;
+    }
+
+    #status3 .time {
+         background:url("../resources/time_03.png") no-repeat 0 0;
+    }
+
+    #status3 .text {
+        background: url("../resources/text_03.png") no-repeat 0 0;
+    }
+
+#status4 {
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#723362,endColorStr=#9D223C); /*IE 6 7 8*/   
+    background: -ms-linear-gradient(top left,#723362,#9D223C);        
+    background:-moz-linear-gradient(top left,#723362,#9D223C);  
+    background:-webkit-linear-gradient(top left,#723362,#9D223C);
+    background: -o-linear-gradient(top left,#723362,#9D223C); 
+}
+
+    #status4 .productcenter {
+         background:url("../resources/PRODUCTCENTER_04.png") no-repeat 0 0;
+    }
+
+    #status4 .time {
+         background:url("../resources/time_04.png") no-repeat 0 0;
+    }
+
+    #status4 .text {
+        background: url("../resources/text_04.png") no-repeat 0 0;
+    }
+
+#status5 {
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#4A2E6D,endColorStr=#242540); /*IE 6 7 8*/   
+    background: -ms-linear-gradient(top left,#4A2E6D,#242540);        
+    background:-moz-linear-gradient(top left,#4A2E6D,#242540);  
+    background:-webkit-linear-gradient(top left,#4A2E6D,#242540);
+    background: -o-linear-gradient(top left,#4A2E6D,#242540); 
+}
+
+    #status5 .productcenter {
+         background:url("../resources/PRODUCTCENTER_05.png") no-repeat 0 0;
+    }
+
+    #status5 .time {
+         background:url("../resources/time_05.png") no-repeat 0 0;
+    }
+
+    #status5 .text {
+        background: url("../resources/text_05.png") no-repeat 0 0;
+    }
+
+#status6 {
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#53327C,endColorStr=#322D61); /*IE 6 7 8*/   
+    background: -ms-linear-gradient(top left,#53327C,#322D61);        
+    background:-moz-linear-gradient(top left,#53327C,#322D61);  
+    background:-webkit-linear-gradient(top left,#53327C,#322D61);
+    background: -o-linear-gradient(top left,#53327C,#322D61);   
+}
+
+    #status6 .productcenter {
+         background:url("../resources/PRODUCTCENTER_06.png") no-repeat 0 0;
+    }
+
+    #status6 .time {
+         background:url("../resources/time_06.png") no-repeat 0 0;
+    }
+
+    #status6 .text {
+        background: url("../resources/text_06.png") no-repeat 0 0;
+    }
+
+#status7 {
+    background:#41438F;       
+}
+
+    #status7 .productcenter {
+         background:url("../resources/PRODUCTCENTER_07.png") no-repeat 0 0;
+    }
+
+    #status7 .time {
+         background:url("../resources/time_07.png") no-repeat 0 0;
+    }
+
+    #status7 .text {
+        background: url("../resources/text_07.png") no-repeat 0 0;
+    }
+
+.eti, .workwith, .getstart, .FAQ_content, .Askus, .bottom {
+    width:100%;
+    min-width:1200px;
+    max-width:1440px;
+    position: relative;
+}
+
+.eti {
+    background:#262729;
+    height:770px;
+}
+
+.eti_text, .workwith_text, .getstart_text, .FAQ_text, .bottom_text {
+    width:100%;
+    position:relative;
+    margin-top:80px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:55px;
+    text-align:center;
+}
+
+.eti_text {
+    margin:0;
+    line-height:150px;
+}
+
+.eti_img {
+    width:900px;
+    height:620px;
+    background:url("../resources/eti.png") no-repeat 0 0;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.workwith_brand {
+    width:100%;
+    height:120px;
+    position:relative;
+    text-align:center;
+    margin:60px 0px;
+}
+
+
+    .workwith_brand1,  .workwith_brand2, .workwith_brand3 {
+        display: inline-block;
+        width:250px;
+        height:100px;
+        background:url("../resources/consult.png") no-repeat 0 0;
+    }
+
+    .workwith_brand1 {
+        background-position:0 0;
+    }
+
+    .workwith_brand2 {
+        background-position:0 -120px;
+    }
+
+    .workwith_brand3 {
+        background-position:0 -240px;
+    }
+
+.getstart_steps {
+    width:100%;
+    height:300px;
+    position:relative;
+    text-align:center;
+    vertical-align:top;
+    line-height:28px;
+    margin:80px 0;
+}
+
+    .steps {
+        display: inline-block;
+        width:280px;
+        height:250px;
+    }
+
+    .steps1, .steps2, .steps3 {
+        display: inline-block;
+        width:280px;
+        height:120px;
+        background:url("../resources/consult.png") no-repeat 0 0;
+    }
+
+    .steps1 {
+        background-position:0px -350px;
+        width:80px;
+    }
+
+    .steps2 {
+        background-position:-80px -350px;
+        width:70px;
+    }
+
+    .steps3 {
+        background-position:-146px -350px;
+        width:100px
+    }
+
+    .steps_text {
+        font-size:28px;
+    }
+
+.line2 {
+    width:100%;
+    height:1px;
+    background: #E5E5E5;
+}
+
+
+.FAQ_content {
+    width:90%;
+}
+
+.FAQ_text {
+    margin-bottom:80px;
+}
+
+
+.FAQ_Q ul{
+    width:100%;
+    height:500px;
+}
+
+.FAQ_Q li{
+    font-size:20px;
+    width:50%;
+    height:0px;
+    float:left;
+    display:block;
+    word-wrap:break-word;
+    padding:20px 0;
+    margin:20px 0px 20px 0px;
+    text-indent:30px;
+    background:url("../resources/triangle.png") no-repeat 0 24px;
+    color:#808080;
+}
+
+    .FAQ_Q li a {
+        color:#808080;
+        text-indent:30px;
+    }
+
+    #Q_click {
+        background-position: 0 -10px;
+        padding-top:0px;
+        margin-top:40px;
+        margin-bottom:100px;
+    }
+
+    #Q_click a{
+        color:#4C4C4C;
+    }
+
+    .FAQ_A {
+        text-indent:0px;
+        padding:20px 0 0 30px;
+        color:#808080;
+        font-weight:bolder;
+    }
+
+.Askus_text {
+    width:200px;
+    height:50px;
+    line-height:50px;
+    position:relative;
+    margin:50px auto;
+    text-align:center;
+    vertical-align:central;
+    font-size:24px;
+    color:#999;
+    border:1px solid #E6E6E6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.bottom {
+  width:100%;
+  height:800px;
+  FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=RED,endColorStr=#663399); /*IE 6 7 8*/
+  background: -moz-linear-gradient(top left,#963,#936,#909,#639);
+  background: -o-linear-gradient(top left,#963,#936,#909,#639);
+  background: -webkit-linear-gradient(top left,#963,#936,#909,#639);
+}
+
+.cur {
+  width:100%;
+  height:800px;
+  background:url("../resources/cur.png") repeat 0 24px;
+}
+
+.bottom_text {
+    color:#FFF;
+}
+
+.bottom_text1 {
+    padding-top:220px;
+}
+
+.bottom_text2 {
+    font-size:26px;
+    margin-top:10px;
+}
+
+.bottom_button {
+    margin:100px auto;
+}
+
+.bottom_text3 {
+    font-size:22px;
+    text-align:left;
+    margin-top:250px;
+    margin-left:50px;
+}
+
+.bottom_a {
+    color:#FFF;
+    margin-left:500px;
+}

@@ -1,0 +1,25 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+ul,li,dl,ol{list-style:none;}
+
+.banner{width:1903px;overflow:hidden;position:relative}
+.banner_inner{position:relative;height:820px;width:950px;margin:0 auto}
+
+.banner_img{width:20000px}
+.banner_img li{float:left;width:1903px;position:relative}
+.banner_img li.bgli01{ background:url(../images/bg_02.jpg) center; height:820px;}
+.banner_img li.bgli02{ background:url(../images/bg_02-01.jpg) center}
+.banner_img li.bgli03{ background:url(../images/bg_02-02.jpg) center}
+.banner_img li.bgli04{ background:#0a7ba4 url(file:///E|/%E5%88%87%E5%9B%BE%E6%AF%94%E8%B5%9B/images/bg_02.jpg) center no-repeat;}
+
+.banner .child1{position:absolute;width:750px;height:790px;left:66px;top:0; font-size:72px; color:#FFF; padding-top:150px;}
+.banner .child2{position:absolute;width:604px;height:790px;left:343px;top:0; font-size:72px; color:#FFF; padding-top:150px;}
+
+.banner_common{position:relative;width:130px;margin:0 auto; clear:both}
+.banner_pre{position:absolute;top:50%;left:0;margin-top:180px;width:16px;height:16px;cursor:pointer;background:url(file:///E|/%E5%88%87%E5%9B%BE%E6%AF%94%E8%B5%9B/images/banner_btn_l_24.png) no-repeat;opacity:.5;filter:alpha(opacity=50); border-radius:50%;background:#fff}
+.banner_next{position:absolute; top:50%; right:0; margin-top:180px; width:16px; height:16px; cursor:pointer; background:url(file:///E|/%E5%88%87%E5%9B%BE%E6%AF%94%E8%B5%9B/images/banner_btn_r_24.png) no-repeat; opacity:.5; filter:alpha(opacity=50); border-radius:50%;background:#fff}
+.banner_pre:hover, .banner_next:hover{opacity:1; filter:alpha(opacity=100); border-radius:50%;background:#fff;}
+.banner .control{width:130px; position:absolute; top:790px; left:50%; margin-left:-40px; z-index:11}
+.banner .control li{float:left; margin-left:10px; width:14px; height:14px; border-radius:50%; cursor:pointer; background:#fff;}
+.banner .control li a{display:none;}
+.banner .control li.current{background:#fff}

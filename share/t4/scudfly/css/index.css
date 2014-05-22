@@ -1,0 +1,219 @@
+body{
+	background-color: white;
+}
+.flipx {
+    -webkit-transform:scaleX(-1);
+}
+#Top{
+	/*background-image: url(../img/TopBG.png);
+	background-repeat: no-repeat;*/
+	background-position-x: center;
+	margin-top: -8px;
+	margin-left: -8px;
+}
+#TopBgIMG{
+	position: absolute;
+	z-index: 1;
+}
+#TopTitle{
+	position: absolute;
+	z-index: 99;
+	top: 200px;
+	left: 300px;
+}
+#TopCenter{
+	background: url(../img/botton1.png) 0px 0px no-repeat;
+	position: absolute;
+	z-index: 99;
+	width: 150px;
+	height: 150px;
+}
+#TopCenter:hover{
+	background: url(../img/botton1.png) 0px -150px no-repeat;
+	position: absolute;
+	z-index: 99;
+	width: 150px;
+	height: 150px;
+}
+#leftBotton{
+	background: url(../img/botton2.png) 0px 0px no-repeat;
+	position: absolute;
+	z-index: 99;
+	width: 256px;
+	height: 74px;
+}
+#leftBotton:hover{
+	background: url(../img/botton2.png) 0px -74px no-repeat;
+	position: absolute;
+	z-index: 99;
+	width: 256px;
+	height: 74px;
+}
+.TopProduct{
+	margin-top: 60px;
+	margin-left: 640px;
+	position: absolute;
+	z-index: 99;
+	width: 380px;
+	height: 380px;
+	overflow: hidden;
+	-webkit-transform:scaleX(-1);
+}
+.TopProductUI{
+	margin-top: 60px;
+	margin-left: 640px;
+	position: absolute;
+	z-index: 99;
+	width: 380px;
+	height: 380px;
+	overflow: hidden;
+}
+.productImg{
+	width: 200%;
+	padding-top: 60px;
+	padding-left: 60px;	
+}
+.productUI{
+	width: 250%;
+	margin-left: -440px;
+	margin-top: -30px;
+	padding-top: 60px;
+	padding-left: 60px;	
+}
+.productDiv{
+	width: 500px;
+	height: 500px;
+	margin-top: 100px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+.productTextImg{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -400px;
+}
+.productTextImg6{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -570px;
+}
+.productTextImg5{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -742px;
+}
+.productTextImg4{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -927px;
+}
+.productTextImg3{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -1104px;
+}
+.productTextImg2{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -1268px;
+}
+.productTextImg1{
+	width: 100%;
+	padding-left: 60px;
+	margin-top: -1453px;
+}
+.productTextDiv{
+	width: 1000px;
+	height: 150px;
+	margin-top: -335px;
+	margin-left: 60px;
+	overflow: hidden;
+}
+.TimeLine{
+	position: absolute;
+	margin-left: 290px;
+	height: 100%;
+}
+.TimeLineImg
+{
+	margin-top: -275px;
+width: 80%;
+}
+@-webkit-keyframes fadeInOut {
+			    0% {
+			        opacity:1;
+			     }
+			    25% {
+			        opacity:0.75;
+			    }
+			    50% {
+			        opacity:0.5;    
+			    }
+			    75% {
+			        opacity:0.25;
+			    }
+			    100%{
+			    	opacity:0;
+			    }
+			}
+			.fadeInOut
+			{
+				animation: fadeInOut 5s;
+				-moz-animation: fadeInOut 5s;	/* Firefox */
+				-webkit-animation: fadeInOut 5s;	/* Safari 和 Chrome */
+			}
+			
+			
+			.anim_fade_image {  
+			    -webkit-animation-name: fadeInOut;
+			    -webkit-animation-timing-function: ease-in-out;
+			    -webkit-animation-iteration-count: infinite;
+			    -webkit-animation-duration: 10s;
+			    -webkit-animation-direction: alternate;
+			}
+			#caihong, #TimeBG7, .TimeBG
+			{
+				position: absolute;
+				width: 101%;
+				height: 11%;
+				margin-top: -8px;
+				margin-left: -8px;
+				top: 0px;
+			}
+			#ProductDiv
+			{
+				position: absolute;
+				width: 100%;
+				height: 500%;
+				margin-top: -8px;
+				margin-left: -8px;
+			}
+			.productDivColor1
+			{
+				background: -webkit-linear-gradient(left top, #FF562F, #FF9444) fixed!important;
+			}
+			.productDivColor2
+			{
+				background: -webkit-linear-gradient(left top, #FFC556, #FF9B2F) fixed!important;
+			}
+			.productDivColor3
+			{
+				background: -webkit-linear-gradient(left top, #935F67, #BC4235) fixed!important;
+			}
+			.productDivColor4
+			{
+				background: -webkit-linear-gradient(left top, #723362, #9D223C) fixed!important;
+			}
+			.productDivColor5
+			{
+				background: -webkit-linear-gradient(left top, #4A2E6D, #242540) fixed!important;
+			}
+			.productDivColor6
+			{
+				background: -webkit-linear-gradient(left top, #53327C, #322D61) fixed!important;
+			}
+			.productDivColor7
+			{
+				background-color: #42438F;
+			}
+			.adv-float{position: absolute; top:0px;}
