@@ -59,6 +59,13 @@
 			    // Maintain aspect ratio
 			    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
 			    game.input.onDown.add(gofull, this);
+			    
+			     this.game.input.touch.onTouchStart = function(){
+			            alert(0);
+			            game.scale.startFullScreen();
+			            //console.log("down");
+			            
+			        }
 		}
 		function update(){
 			game.scale.startFullScreen();
