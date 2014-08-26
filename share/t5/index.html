@@ -62,13 +62,12 @@
 			    
 			     this.game.input.touch.onTouchStart = function(){
 			            alert(0);
-			            game.scale.startFullScreen();
+			            gofull();
 			            //console.log("down");
 			            
 			        }
 		}
 		function update(){
-			game.scale.startFullScreen();
 			time++;
 			if(time % 100 == 0){
 				createZiDan(1);
