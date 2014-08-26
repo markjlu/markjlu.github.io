@@ -35,7 +35,8 @@
 		function preload(){
 			game.load.image("sky","./t5/assets/games/tanks/sky.png");
 			game.load.image("zidan","./t5/assets/games/tanks/zidan.png");
-			game.load.image("fly","./t5/assets/games/tanks/fly.png")
+			game.load.image("fly","./t5/assets/games/tanks/fly.png");
+			game.scale.startFullScreen();
 		}
 
 		function create(){
@@ -58,7 +59,6 @@
 			
 			    // Maintain aspect ratio
 			    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
-			game.scale.startFullScreen();
 			    game.input.onDown.add(gofull, this);
 		}
 		function update(){
