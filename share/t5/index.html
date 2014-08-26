@@ -60,9 +60,9 @@
 			    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
 			    game.input.onDown.add(gofull, this);
 			    
-			     this.game.input.touch.onTouchStart = function(){
+			     this.game.input.touch.onTouchEnd = function(){
+			            
 			            gofull();
-			            alert(1);
 			            //console.log("down");
 			            
 			        }
