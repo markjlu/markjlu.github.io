@@ -48,8 +48,18 @@
 			cursors = game.input.keyboard.createCursorKeys();
 			text = game.add.text(250, 16, '', { fill: '#ffffff' });
 			
-		    	game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-		        game.scale.startFullScreen();
+			    game.stage.backgroundColor = '#000';
+			
+			    // Stretch to fill
+			    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+			
+			    // Keep original size
+			    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.NO_SCALE;
+			
+			    // Maintain aspect ratio
+			    // game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+			
+			    game.input.onDown.add(gofull, this);
 		}
 		function update(){
 			time++;
@@ -78,7 +88,18 @@
 			game.physics.arcade.collide(fly, vGroup,boom,null,this);
 			// game.physics.arcade.collide(fly, zidan2,boom,null,this);
 		}
-
+		function gofull() {
+		
+		    if (game.scale.isFullScreen)
+		    {
+		        game.scale.stopFullScreen();
+		    }
+		    else
+		    {
+		        game.scale.startFullScreen();
+		    }
+		
+		}
 		function boom(obj1,obj2){
 			alert("it's over");			
 			vGroup.kill();
