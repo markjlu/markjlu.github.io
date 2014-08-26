@@ -68,6 +68,10 @@
 			}else if (cursors.down.isDown){
 				fly.y += 4;
 			}
+			game.input.moveCallback = function(pointer, x, y) {
+		        	fly.x = x;
+		        	fly.y = y;
+		    	}
 			game.physics.arcade.collide(fly, vGroup,boom,null,this);
 			// game.physics.arcade.collide(fly, zidan2,boom,null,this);
 		}
